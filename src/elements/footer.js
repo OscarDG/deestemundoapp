@@ -1,6 +1,7 @@
-import facebook from './images/facebook.svg'
-import instagram from './images/instagram.svg'
-import spotify from './images/spotify.svg'
+import '../elements/footer.css'
+import facebook from '../images/facebook.svg'
+import instagram from '../images/instagram.svg'
+import spotify from '../images/spotify.svg'
 
 function Footer(){
     const socials = [

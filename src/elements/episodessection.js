@@ -1,8 +1,8 @@
 
-import image1 from './images/T3_Ep1_v2.png';
-import image2 from './images/T3_Ep2.png';
-import image3 from './images/T3_Ep3.png';
-import image4 from './images/T3_Ep3.png';
+import '../elements/episodessection.css'
+import image1 from '../images/T3_Ep1_v2.png';
+import image2 from '../images/T3_Ep2.png';
+import image3 from '../images/T3_Ep3.png';
 
 function EpisodesContent(){
     const episodes = [{

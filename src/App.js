@@ -1,46 +1,18 @@
-import React, {useState, useEffect} from 'react';
-import './App.css';
-import NavBar from './navbar';
-import EpisodesContent from './episodes';
-import Footer from './footer';
-import MainHero from './mainhero';
-import BlogContent from './blog';
 
-function App() {
-  const [sticky, setSticky] = useState(false);
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Home from './pages/home';
+import Episodespage from './pages/episodespage';
 
-  useEffect(() => {
-    const handleScroll = () => {
-        if (window.scrollY > 50){
-            setSticky(true);
-        }else{
-            setSticky(false);
-        }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return() => {
-        window.removeEventListener('scroll', handleScroll);
-    };
-}, []);
-
-  return (
-    <>
-      <header className={`app-header ${sticky ? 'sticky' : ''}`}>
-        <NavBar name="Nav Bar" status={true}/>
-      </header>
-      <section>
-        <MainHero />
-      </section>
-      <section className="App-content">
-        <h1 className='episodes-title'>ÚLTIMOS EPISODIOS</h1>
-        <EpisodesContent />
-        <BlogContent />
-      </section>
-      <footer className='App-footer'>
-        <Footer />
-      </footer>
-    </>
-  );
-}
+function App (){
+  return(
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home/>}/>
+        <Route path='/Inicio' element={<Home/>} />
+        <Route path='/Episodios' element={<Episodespage />} />
+      </Routes>
+    </BrowserRouter>
+  )
+};
 
 export default App;

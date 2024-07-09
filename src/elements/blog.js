@@ -1,8 +1,8 @@
-import './blog.css';
-import postImage1 from './images/podcast-post_1.jpg'
-import postImage2 from './images/podcast-post_2.jpg'
-import postImage3 from './images/podcast-post_3.jpg'
-import postImage4 from './images/podcast-post_4.jpg'
+import './blog.css'
+import postImage1 from '../images/podcast-post_1.jpg'
+import postImage2 from '../images/podcast-post_2.jpg'
+import postImage3 from '../images/podcast-post_3.jpg'
+import postImage4 from '../images/podcast-post_4.jpg'
 
 const blogPosts = [{
     title: '¿Por qué hacer un Podcast?',

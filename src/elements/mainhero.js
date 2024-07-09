@@ -1,5 +1,5 @@
-import './mainhero.css';
-import background from './images/background.jpg';
+import './mainhero.css'
+import background from '../images/background.jpg';
 
 function MainHero(){
     return(
