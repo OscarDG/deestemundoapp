@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import './home.css';
 import NavBar from '../elements/navbar';
 import EpisodesContent from '../elements/episodessection';
 import MainHero from '../elements/mainhero';

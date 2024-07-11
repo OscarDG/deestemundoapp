@@ -1,0 +1,94 @@
+:root{
+    --main-white: #FDFEFE;
+    --second-yellow: #FFDE81;
+    --main--yellow: #FFD357;
+    --main-blue: #0B5F96;
+    --second-blue: #468BB7;
+    --links-color: #81ecec;
+    --main-black: #1E2025;
+    --second-black: #424551;
+    --main-title-font: "Nunito", sans-serif;
+    --paragraph-font: "Quicksand", sans-serif;
+    --main-title-size: 18px;
+    --second-title: 14px;
+    --paragraph-size: 12px;
+    --span-size: 10px;
+  }
+
+#root{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+  .pageEpisodes-wrap{
+    position: relative;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+  }
+
+  .episode-chart{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 300px;
+    height: 380px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+
+  .episode-image{
+    width: 300px;
+  }
+
+  .episode-title{
+    position: relative;
+    top: -25px;
+    left: 30px;
+    width: 100px;
+    font-size: var(--main-title-size);
+    font-family: var(--main-title-font);
+  }
+
+  .episode-topic{
+    justify-content: flex-start;
+    position: relative;
+    top: -20px;
+    left: 30px;
+    width: 80px;
+    font-family: var(--paragraph-font);
+    font-size: var(--paragraph-size);
+    color: var(--second-black);
+  }
+
+  .episode-more{
+    position: relative;
+    top:15px;
+    left: 240px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--links-color);
+  }
+
+  .episode-more:hover{
+    background-color: transparent;
+    border: solid var(--links-color);
+  }
+
+  .episode-more img{
+    position: relative;
+    top: 7px;
+    left: 7px;
+    width: 30px;
+  }

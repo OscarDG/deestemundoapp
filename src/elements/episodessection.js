@@ -1,10 +1,12 @@
 
+import React from 'react'
+
 import '../elements/episodessection.css'
 import image1 from '../images/T3_Ep1_v2.png';
 import image2 from '../images/T3_Ep2.png';
 import image3 from '../images/T3_Ep3.png';
 
-function EpisodesContent(){
+function EpisodesContent(props){
     const episodes = [{
           name: 'Episodio 1',
           image: image1,
@@ -29,7 +31,8 @@ function EpisodesContent(){
         isNew: true,
         link: 'https://open.spotify.com/episode/7n7vMqFQxGMCDCkOWGw3qR?si=39a5ddacc0ea405f' ,
     },
-]
+];
+
     const episodesContainers = episodes.map((episode) => {
             if (episode.isNew === true){
                 return(
