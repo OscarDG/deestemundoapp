@@ -5,6 +5,8 @@ import MainHero from '../elements/mainhero';
 import BlogContent from '../elements/blog';
 import Footer from '../elements/footer';
 
+import './home.css'
+
 function Home (){
     const [sticky, setSticky] = useState(false);
 

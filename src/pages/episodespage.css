@@ -23,14 +23,16 @@
 }
 
   .pageEpisodes-wrap{
-    position: relative;
-    top: 0px;
+    position:relative;
+    top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-self: center;
+    flex-wrap: wrap;
     width: 100%;
-    height: 500px;
+    height: auto;
+    min-height: 760px;
     padding: 20px;
   }
 
@@ -42,16 +44,17 @@
     width: 300px;
     height: 380px;
     border-radius: 8px;
+    margin: 0 0 50px 0;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
   }
 
-  .episode-image{
+  .episode-image--page{
     width: 300px;
   }
 
-  .episode-title{
+  .episode-title--page{
     position: relative;
     top: -25px;
     left: 30px;
@@ -60,7 +63,7 @@
     font-family: var(--main-title-font);
   }
 
-  .episode-topic{
+  .episode-topic--page{
     justify-content: flex-start;
     position: relative;
     top: -20px;
@@ -79,11 +82,19 @@
     height: 45px;
     border-radius: 50%;
     background-color: var(--links-color);
+    background-image: url('../images/arrow-right-white.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .episode-more:hover{
-    background-color: transparent;
-    border: solid var(--links-color);
+    background-color: (var(--main-white));
+    border: solid 2px var(--links-color);
+    background-image: url('../images/arrow-right-green.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .episode-more img{

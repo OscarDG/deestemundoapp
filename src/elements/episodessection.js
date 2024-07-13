@@ -6,7 +6,7 @@ import image1 from '../images/T3_Ep1_v2.png';
 import image2 from '../images/T3_Ep2.png';
 import image3 from '../images/T3_Ep3.png';
 
-function EpisodesContent(props){
+function EpisodesContent(){
     const episodes = [{
           name: 'Episodio 1',
           image: image1,
@@ -74,7 +74,7 @@ function EpisodesContent(props){
         <div className="mainEpisodes-wrap">
             {episodesContainers}
             <div className='episodes-button'>
-                <a href='./'><p>Más episodios</p></a>
+                <a href='/Episodios'><p>Más episodios</p></a>
             </div>
         </div>
         </>

@@ -2,14 +2,15 @@
 import React, {useState, useEffect} from 'react';
 import NavBar from "../elements/navbar";
 import Footer from "../elements/footer";
-import MainHero from '../elements/mainhero';
+import SecondHero from '../elements/secondhero';
+import Dropdown from '../elements/dropdownmenu'
 import './episodespage.css'
+import '../elements/dropdownmenu.css'
 
 import image1 from '../images/T3_Ep1_v2.png';
 import image2 from '../images/T3_Ep2.png';
 import image3 from '../images/T3_Ep3.png';
-import arrow from '../images/arrow-right-white.svg';
-import arrow2 from '../images/arrow-right-green.svg';
+
 
 
 function Episodespage (){
@@ -54,17 +55,23 @@ function Episodespage (){
         isNew: true,
         link: 'https://open.spotify.com/episode/7n7vMqFQxGMCDCkOWGw3qR?si=39a5ddacc0ea405f',
     },
+    {
+        name: 'Episodio 3',
+        image: image3,
+        Date: '15-07-2024',
+        topic: 'Social', 
+        isNew: true,
+        link: 'https://open.spotify.com/episode/7n7vMqFQxGMCDCkOWGw3qR?si=39a5ddacc0ea405f',
+    },
 ];
-
-const [isHovered, setIsHovered] = useState(false);
 
 const episodesChart = episodes.map((episode) => {
     return(
         <div className="episode-chart">
-            <img className='episode-image' src={episode.image} alt={episode.name}/>
-            <a onMouseEnter= {() => setIsHovered(true)} onMouseLeave= {() => setIsHovered(false)} className='episode-more' href='./'><span><img src= {isHovered ? arrow2 : arrow}/></span></a>
-            <h2 className='episode-title'>{episode.name}</h2>
-            <span className='episode-topic'>{episode.topic}</span>
+            <img className='episode-image--page' src={episode.image} alt={episode.name}/>
+            <a className='episode-more' href={episode.link} target='_blank'><span></span></a>
+            <h2 className='episode-title--page'>{episode.name}</h2>
+            <span className='episode-topic--page'>{episode.topic}</span>
         </div>
     )
 });
@@ -74,9 +81,10 @@ const episodesChart = episodes.map((episode) => {
 <>
     <header className={`app-header ${sticky ? 'sticky' : ''}`}>
         <NavBar />
+        <Dropdown />
     </header>
     <section>
-            <MainHero />
+            <SecondHero />
         </section>
     <section className='pageEpisodes-wrap'>
         {episodesChart}

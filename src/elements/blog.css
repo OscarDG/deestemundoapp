@@ -24,7 +24,7 @@
     width: 100%;
     height: 100%;
     background-color: var(--main-white);
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     box-shadow: inset 0 10px 10px -5px rgba(0, 0, 0, 0.5);
 }
 .blog-content{
@@ -85,6 +85,7 @@
     width: 200px;
     height: 150px;
     border-radius: 6px 6px 6px 6px;
+    filter: drop-shadow(2px 2px  3px var(--second-black))
 }
 
 .post-image img{
@@ -95,7 +96,7 @@
 
 .post-date{
     position: absolute;
-    bottom: 70px;
+    bottom: 65px;
     left: 0;
     color: var(--second-black);
     font-size: var(--span-size);
@@ -105,7 +106,7 @@
 
 .post-content{
     position: absolute;
-    bottom: 45px;
+    bottom: 40px;
     font-size: var(--span-size);
     font-family: var(--paragraph-font);
     color: var(--second-black);

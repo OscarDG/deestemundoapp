@@ -15,14 +15,15 @@
     --span-size: 10px;
   }
 
-.main-hero{
+.second-hero{
     position: relative;
-    height: 30vh;
+    height: 20vh;
     width: 100%;
+    min-width: 421px;
     overflow: hidden;
 }
 
-.main-hero--img{
+.second-hero--img{
     position: relative;
     height: 100%;
     width: 100%;
@@ -30,7 +31,7 @@
     object-position: center;
 }
 
-.main-hero--overlay{
+.second-hero--overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -42,7 +43,7 @@
     background-color: rgba(0, 0, 0, 0.5);;
 }
 
-.main-hero--button{
+.second-hero--button{
     position: absolute;
     bottom: 40px;
     width: 200px;
@@ -70,14 +71,14 @@
 
 
 @media (min-width: 768px){
-    .main-hero{
+    .second-hero{
         position: relative;
-        height: 60vh;
+        height: 20vh;
         width: 100%;
         overflow: hidden;
     }
 
-    .main-hero--img{
+    .second-hero--img{
         position: relative;
         height: 100%;
         width: 100%;
@@ -85,7 +86,7 @@
         object-position: center;
     }
 
-    .main-hero--overlay{
+    .second-hero--overlay{
         position: absolute;
         top: 0;
         left: 0;
@@ -97,30 +98,6 @@
         background-color: rgba(0, 0, 0, 0.5);;
     }
 
-    .main-hero--button{
-        position: absolute;
-        bottom: 40px;
-        width: 200px;
-        height: 40px;
-        border-radius: 8px;
-        cursor: pointer;
-        border: 0;
-        background-color: var(--main--yellow);
-        font-size: var(--main-title-size);
-        font-family: var(--main-title-font);
-        font-weight: bold;
-        color: var(--main-white);
-    }
 
-    .main-hero--button:hover{
-        border-radius: 8px;
-        border: solid 1px var(--main--yellow);
-        cursor: pointer;
-        font-size: var(--main-title-size);
-        font-family: var(--main-title-font);
-        font-weight: bold;
-        color: var(--main--yellow);
-        background-color: transparent;
-    }
     
 };
