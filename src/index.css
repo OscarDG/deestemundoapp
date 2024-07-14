@@ -21,28 +21,27 @@
   padding: 0;
 }
 
-html{
-  width: 100%;
-}
 
 #root{
   position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-width: 100%;
+  min-width: 420px;
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
 @media (min-width: 768px){
+
+
   #root{
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-width: 100%;
+    min-width: 420px;
     height: 100%;
     margin: 0;
     padding: 0;

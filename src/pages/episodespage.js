@@ -81,7 +81,6 @@ const episodesChart = episodes.map((episode) => {
 <>
     <header className={`app-header ${sticky ? 'sticky' : ''}`}>
         <NavBar />
-        <Dropdown />
     </header>
     <section>
             <SecondHero />

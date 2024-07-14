@@ -1,12 +1,23 @@
 import React, {useState} from 'react'
 import '../elements/navbar.css'
 import logo_sinfondo from '../images/logo_sinfondo.png'
-import menu from '../images/burguer_menu.svg'
 import DropMenu from '../elements/dropdownmenu'
 
 function NavBar(){
 
+    const [navClass, setNavClass] = useState('nav-menu--mobile');
+    const [dropWrapClass, setDropClass] = useState('dropmenu-wrap unActive')
     const [open, SetOpen] = useState(false);
+
+    const handleEvent = () => {
+        SetOpen(() => !open);
+
+        if(navClass === 'nav-menu--mobile'){
+            setNavClass(() => 'nav-menu--mobile open')
+        }else{
+            setNavClass(() => 'nav-menu--mobile')
+        };
+    }
 
     const pages = ['Inicio', 'Episodios', 'Blog', 'Contacto'];
     const navLinks = pages.map(page => {
@@ -24,8 +35,11 @@ function NavBar(){
             <div className= 'header-menu'>
                 <nav className="nav-menu">{navLinks}</nav>
             </div>
-            <div className='nav-menu--mobile' onClick= {() => SetOpen(() => !open)}>
-                <img src={menu} alt='menú'/>
+            <div className= {navClass} onClick= {handleEvent}>
+
+                <span className='line-1'></span>
+                <span className='line-2'></span>
+                <span className='line-3'></span>
             </div>
             <div>
               {open && <DropMenu />}

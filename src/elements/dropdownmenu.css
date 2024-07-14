@@ -22,13 +22,6 @@
     right: 80px;
 }
 
-.dropdown{
-    display: none;
-    position: absolute;
-    top:35px;
-    right: 20px;
-}
-
 .dropdown-menu{
     position: absolute;
     display:flex;
