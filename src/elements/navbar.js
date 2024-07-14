@@ -2,15 +2,11 @@ import React, {useState} from 'react'
 import '../elements/navbar.css'
 import logo_sinfondo from '../images/logo_sinfondo.png'
 import menu from '../images/burguer_menu.svg'
-import Dropdown from '../elements/dropdownmenu'
+import DropMenu from '../elements/dropdownmenu'
 
 function NavBar(){
-    const [isTrue, setIsTrue] = useState(false);
 
-    const handleClick = () =>{
-        setIsTrue(!isTrue);
-    };
-
+    const [open, SetOpen] = useState(false);
 
     const pages = ['Inicio', 'Episodios', 'Blog', 'Contacto'];
     const navLinks = pages.map(page => {
@@ -28,11 +24,11 @@ function NavBar(){
             <div className= 'header-menu'>
                 <nav className="nav-menu">{navLinks}</nav>
             </div>
-            <div className='nav-menu--mobile'>
-                <img src={menu} alt='menú' onClick= {handleClick}/>
+            <div className='nav-menu--mobile' onClick= {() => SetOpen(() => !open)}>
+                <img src={menu} alt='menú'/>
             </div>
             <div>
-                <Dropdown active = {isTrue}/>
+              {open && <DropMenu />}
             </div>
         </>
      )

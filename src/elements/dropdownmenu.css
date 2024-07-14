@@ -19,14 +19,14 @@
     display: flex;
     position: absolute;
     top:35px;
-    right: 30px;
+    right: 80px;
 }
 
 .dropdown{
     display: none;
     position: absolute;
     top:35px;
-    right: 30px;
+    right: 20px;
 }
 
 .dropdown-menu{
@@ -89,6 +89,22 @@
         background-color: var(--main-black);
         border: 1px solid var(--second-black);
         display: none;
+    }
+
+    .dropdown-close{
+        z-index: 2;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/close_white.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .dropdown-close:hover{
+        cursor: pointer;
     }
 
     .dropdown-menu li{
