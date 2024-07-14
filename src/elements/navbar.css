@@ -24,7 +24,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-width: 360px;
+    min-width: 320px;
     height: 100px;
     padding: 5px;
     background-color: transparent;
@@ -35,7 +35,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(66, 69, 81, 0.5);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -43,7 +43,7 @@
   
   .header-logo{
     position: absolute;
-    top: 5px;
+    top: 10px;
     justify-self: center;
     width: 100px;
     height: 100px;
@@ -56,7 +56,8 @@
   
   .header-menu{
     display: none;
-    align-items: center;
+    justify-content: end;
+    align-items:end;
     width: 300px;
     height: 50px;
   }
@@ -66,7 +67,7 @@
       height: 50px;
     }
   
-    .nav-links {
+  .nav-links {
       text-decoration: none;
       color: var(--paragraph-color);
       font-family: var(--paragraph-font);
@@ -75,15 +76,15 @@
       color: white;
     }
     
-    .nav-links:hover{
+  .nav-links:hover{
       color: var(--links-color);
     }
   
   .nav-menu--mobile{
     display:flex;
     position: absolute;
-    right: 35px;
-    top: 35px;
+    right: 20px;
+    top: 30px;
   }
   
   .nav-menu--mobile img{
@@ -109,16 +110,18 @@
         top: 0;
         left: 0;
         width: 100%;
-        background: rgba(255, 255, 255, 0.5);
+        background: rgba(66, 69, 81, 0.5);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
       }
       
       .header-logo{
-        position: relative;
-        width: 100px;
-        height: 100px;
+        position: absolute;
+        left: 50px;
+        top: 10px;
+        width:90px;
+        height: 90px;
       }
     
       .header-logo img{
@@ -127,16 +130,18 @@
       }
     
       .header-menu{
-        position: relative;
+        position: absolute;
         display: flex;
         align-self: center;
         justify-content: center;
-        margin-left: 300px;
+        top: 30px;
+        right: 30px;
         width: 320px;
         height: 50px;
       }
       
       .nav-menu{
+        align-self: center;
         width: 300px;
         height: auto;
         }

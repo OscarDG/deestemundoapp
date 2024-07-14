@@ -17,7 +17,7 @@
 
 .second-hero{
     position: relative;
-    height: 20vh;
+    height: 30vh;
     width: 100%;
     min-width: 421px;
     overflow: hidden;
@@ -73,7 +73,7 @@
 @media (min-width: 768px){
     .second-hero{
         position: relative;
-        height: 20vh;
+        height: 30vh;
         width: 100%;
         overflow: hidden;
     }
