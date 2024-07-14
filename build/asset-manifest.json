@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/deestemundoapp/build/static/css/main.01df457d.css",
+    "main.js": "/deestemundoapp/build/static/js/main.5f6c4625.js",
+    "static/js/453.12671176.chunk.js": "/deestemundoapp/build/static/js/453.12671176.chunk.js",
+    "static/media/podcast-post_4.jpg": "/deestemundoapp/build/static/media/podcast-post_4.bb7dd9a6fb65cd47dd20.jpg",
+    "static/media/podcast-post_1.jpg": "/deestemundoapp/build/static/media/podcast-post_1.2a7415d43254b4bd11e0.jpg",
+    "static/media/T3_Ep1_v2.png": "/deestemundoapp/build/static/media/T3_Ep1_v2.cc33312d7168a3119253.png",
+    "static/media/T3_Ep2.png": "/deestemundoapp/build/static/media/T3_Ep2.25aef2e83b06bf9d3a33.png",
+    "static/media/podcast-post_2.jpg": "/deestemundoapp/build/static/media/podcast-post_2.6cc195f1085eb8cd2cff.jpg",
+    "static/media/podcast-post_3.jpg": "/deestemundoapp/build/static/media/podcast-post_3.9a734ce847d33efb499c.jpg",
+    "static/media/T3_Ep3.png": "/deestemundoapp/build/static/media/T3_Ep3.440d7c46d7de382aa0bb.png",
+    "static/media/logo_sinfondo.png": "/deestemundoapp/build/static/media/logo_sinfondo.ea40c91de6fac0e3ee77.png",
+    "static/media/instagram.svg": "/deestemundoapp/build/static/media/instagram.03bf70c357507a5be11b1aa998afd818.svg",
+    "static/media/spotify.svg": "/deestemundoapp/build/static/media/spotify.81c261312e8e8bce6bed55c962280624.svg",
+    "static/media/facebook.svg": "/deestemundoapp/build/static/media/facebook.ad0b1b32b5e27e588db7ba76c4858ba6.svg",
+    "index.html": "/deestemundoapp/build/index.html",
+    "static/media/close_white.svg": "/deestemundoapp/build/static/media/close_white.641c66645501825e4a8d.svg",
+    "static/media/arrow-right-green.svg": "/deestemundoapp/build/static/media/arrow-right-green.0c9c5120539f8f03908b.svg",
+    "static/media/arrow-right-white.svg": "/deestemundoapp/build/static/media/arrow-right-white.9693eb4ec002fc1e7658.svg",
+    "main.01df457d.css.map": "/deestemundoapp/build/static/css/main.01df457d.css.map",
+    "main.5f6c4625.js.map": "/deestemundoapp/build/static/js/main.5f6c4625.js.map",
+    "453.12671176.chunk.js.map": "/deestemundoapp/build/static/js/453.12671176.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01df457d.css",
+    "static/js/main.5f6c4625.js"
+  ]
+}
