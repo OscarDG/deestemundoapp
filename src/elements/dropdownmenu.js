@@ -7,7 +7,7 @@ function DropMenu (){
                 <ul className="dropdown-menu">
                     <li><a href="./Inicio" alt=' Inicio'>Inicio</a></li>
                     <li><a href="./Episodios" alt= 'Episodios'>Episodios</a></li>
-                    <li><a href='./' alt='Blog'>Blog</a></li>
+                    <li><a href='./Blog' alt='Blog'>Blog</a></li>
                     <li><a href='./' alt='Contacto'>Contacto</a></li>
                 </ul>
             </div>

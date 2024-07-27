@@ -3,9 +3,8 @@ import React, {useState, useEffect} from 'react';
 import NavBar from "../elements/navbar";
 import Footer from "../elements/footer";
 import SecondHero from '../elements/secondhero';
-import Dropdown from '../elements/dropdownmenu'
-import './episodespage.css'
-import '../elements/dropdownmenu.css'
+import './episodespage.css';
+import '../elements/dropdownmenu.css';
 
 import image1 from '../images/T3_Ep1_v2.png';
 import image2 from '../images/T3_Ep2.png';
@@ -83,8 +82,8 @@ const episodesChart = episodes.map((episode) => {
         <NavBar />
     </header>
     <section>
-            <SecondHero />
-        </section>
+        <SecondHero />
+    </section>
     <section className='pageEpisodes-wrap'>
         {episodesChart}
     </section>

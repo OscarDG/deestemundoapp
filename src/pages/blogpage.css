@@ -1,0 +1,26 @@
+:root{
+    --main-white: #FDFEFE;
+    --second-yellow: #FFDE81;
+    --main--yellow: #FFD357;
+    --main-blue: #0B5F96;
+    --second-blue: #468BB7;
+    --links-color: #81ecec;
+    --main-black: #1E2025;
+    --second-black: #424551;
+    --main-title-font: "Nunito", sans-serif;
+    --paragraph-font: "Quicksand", sans-serif;
+    --main-title-size: 18px;
+    --second-title: 14px;
+    --paragraph-size: 12px;
+    --span-size: 10px;
+  }
+
+  .entries-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: auto;
+  }
+

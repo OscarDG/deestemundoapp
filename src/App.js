@@ -2,6 +2,7 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './pages/home';
 import Episodespage from './pages/episodespage';
+import BlogPage from './pages/blogpage';
 
 function App (){
   return(
@@ -10,6 +11,7 @@ function App (){
         <Route index element={<Home/>}/>
         <Route path='/Inicio' element={<Home/>} />
         <Route path='/Episodios' element={<Episodespage />} />
+        <Route path='/Blog' element={<BlogPage />} />
       </Routes>
     </BrowserRouter>
   )
