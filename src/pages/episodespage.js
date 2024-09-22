@@ -2,17 +2,15 @@
 import React, {useState, useEffect} from 'react';
 import NavBar from "../elements/navbar";
 import Footer from "../elements/footer";
+import {episodes} from '../episodesData';
 import SecondHero from '../elements/secondhero';
 import './episodespage.css';
 import '../elements/dropdownmenu.css';
 
-import image1 from '../images/T3_Ep1_v2.png';
-import image2 from '../images/T3_Ep2.png';
-import image3 from '../images/T3_Ep3.png';
-
 
 
 function Episodespage (){
+
     const [sticky, setSticky] = useState(false);
 
     useEffect(() => {
@@ -23,46 +21,12 @@ function Episodespage (){
               setSticky(false);
           }
       };
+      
       window.addEventListener('scroll', handleScroll);
       return() => {
           window.removeEventListener('scroll', handleScroll);
       };
   }, []);
-
-    const episodes = [
-    {
-        name: 'Episodio 1',
-        image: image1,
-        Date: '16-06-2024',
-        topic: 'Politics',
-        isNew: false, 
-        link: 'https://open.spotify.com/episode/3VN4IID3iagPCymctwAQEf?si=ee48d49fda9f4e29',
-    },
-    {
-        name: 'Episodio 2',
-        image: image2,
-        Date: '06-07-2024',
-        topic: 'Economics',  
-        isNew: false,
-        link: 'https://open.spotify.com/episode/5rDV4YcYijgk3acAs7XZ0f?si=fbf5ad003d7a4aaf',
-    },
-    {
-        name: 'Episodio 3',
-        image: image3,
-        Date: '15-07-2024',
-        topic: 'Social', 
-        isNew: true,
-        link: 'https://open.spotify.com/episode/7n7vMqFQxGMCDCkOWGw3qR?si=39a5ddacc0ea405f',
-    },
-    {
-        name: 'Episodio 3',
-        image: image3,
-        Date: '15-07-2024',
-        topic: 'Social', 
-        isNew: true,
-        link: 'https://open.spotify.com/episode/7n7vMqFQxGMCDCkOWGw3qR?si=39a5ddacc0ea405f',
-    },
-];
 
 const episodesChart = episodes.map((episode) => {
     return(
