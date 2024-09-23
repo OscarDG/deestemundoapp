@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import NavBar from '../elements/navbar';
 import SecondHero from '../elements/secondhero';
-import BlogAside from '../elements/blog_aside';
-import {PostSection} from './post_section';
+import BlogContent from '../elements/blog_content';
 import Footer from '../elements/footer';
 import {blogEntries} from './entriesData';
 import '../pages/blogpage.css'
@@ -46,12 +45,9 @@ function BlogPage(){
         <section>
             <SecondHero />
         </section>
-        <aside className='entries-container'>
-            <BlogAside />
-        </aside>
-        <section>
-            <PostSection />
-        </section>
+        <div className='entries-container'>
+            <BlogContent />
+        </div>
         <footer className='App-footer'>
             <Footer />
         </footer>

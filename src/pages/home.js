@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import NavBar from '../elements/navbar';
 import EpisodesContent from '../elements/episodessection';
 import MainHero from '../elements/mainhero';
-import BlogContent from '../elements/blog';
+import BlogContent from '../elements/blog_home';
 import Footer from '../elements/footer';
 
 import './home.css'

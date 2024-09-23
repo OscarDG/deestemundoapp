@@ -109,7 +109,7 @@
 .post-date{
     position: absolute;
     bottom: 65px;
-    left: 0;
+    left: 100px;
     color: var(--second-black);
     font-size: var(--span-size);
     font-weight: bold;
@@ -117,18 +117,23 @@
 }
 
 .post-content{
+    width: 200px;
+    height: 30px;
     position: absolute;
     bottom: 40px;
     font-size: var(--span-size);
     font-family: var(--paragraph-font);
     color: var(--second-black);
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
 }
 
 .post-wrapper a{
     position: absolute;
     bottom: 15px;
     left: 0;
-    text-align: left;
+    text-align: center;
     font-family: var(--paragraph-font);
     text-decoration: none;
     color: var(--main-blue);
@@ -242,16 +247,23 @@
     }
     
     .post-content{
+        width: 200px;
+        height: 30px;
+        position: absolute;
+        bottom: 40px;
         font-size: var(--span-size);
         font-family: var(--paragraph-font);
-        font-weight:300;
-        color: var(--main-black);
+        color: var(--second-black);
+        text-align: center;
+        overflow: hidden;
+        white-space: wrap;
+        text-overflow: ellipsis;
     }
     
     .post-wrapper a{
         position: absolute;
         bottom: 5px;
-        left: 0;
+        left: 90px;
         font-family: var(--paragraph-font);
         text-decoration: none;
         color: var(--main-blue);
