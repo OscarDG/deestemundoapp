@@ -1,6 +1,6 @@
 
 import background from '../images/background.jpg';
-import './secondhero.css';
+import '../css/secondhero.css';
 
 function SecondHero(){
     return(

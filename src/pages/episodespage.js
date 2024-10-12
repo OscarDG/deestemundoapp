@@ -4,8 +4,7 @@ import NavBar from "../elements/navbar";
 import Footer from "../elements/footer";
 import {episodes} from '../episodesData';
 import SecondHero from '../elements/secondhero';
-import './episodespage.css';
-import '../elements/dropdownmenu.css';
+import '../css/episodespage.css';
 
 
 

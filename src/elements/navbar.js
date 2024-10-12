@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import '../elements/navbar.css'
+import '../css/navbar.css'
 import logo_sinfondo from '../images/logo_sinfondo.png'
 import DropMenu from '../elements/dropdownmenu'
 

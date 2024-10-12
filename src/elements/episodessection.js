@@ -1,7 +1,7 @@
 
 import React from 'react'
 
-import '../elements/episodessection.css'
+import '../css/episodessection.css'
 import image1 from '../images/T3_Ep1_v2.png';
 import image2 from '../images/T3_Ep2.png';
 import image3 from '../images/T3_Ep3.png';
@@ -71,6 +71,7 @@ function EpisodesContent(){
     });
     return(
         <>
+        <h1 className='episodes-title'>ÚLTIMOS EPISODIOS</h1>
         <div className="mainEpisodes-wrap">
             {episodesContainers}
             <div className='episodes-button'>

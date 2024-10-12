@@ -1,4 +1,4 @@
-import '../elements/footer.css'
+import '../css/footer.css'
 import facebook from '../images/facebook.svg'
 import instagram from '../images/instagram.svg'
 import spotify from '../images/spotify.svg'

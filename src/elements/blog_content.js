@@ -1,4 +1,4 @@
-import './blog_content.css';
+import '../css/blog_content.css';
 import React, {useState} from 'react';
 import {blogPosts} from './postsData';
 
@@ -17,11 +17,6 @@ function BlogContent(){
                 <span className='asidepost-date'>{post.date}</span>
                 <a target='_blank' rel='noreferrer' onClick={()=> setContent(index)}>Leer más</a>
             </article>
-            <section>
-                <div>
-                    
-                </div>
-            </section>
             </>
         )
     });
@@ -32,9 +27,7 @@ function BlogContent(){
     return(
         <>
             <aside className="aside_wrapper">
-                <div className="aside-content">
                     {posts}
-                </div>
             </aside>
             <div className="post-section">
                     <h1 className='post-section--title'>{postContent.title}</h1>

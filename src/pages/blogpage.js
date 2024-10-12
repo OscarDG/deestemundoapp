@@ -4,7 +4,7 @@ import SecondHero from '../elements/secondhero';
 import BlogContent from '../elements/blog_content';
 import Footer from '../elements/footer';
 import {blogEntries} from './entriesData';
-import '../pages/blogpage.css'
+import '../css/blogpage.css'
 
 function BlogPage(){
 

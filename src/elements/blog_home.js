@@ -1,4 +1,4 @@
-import './blog.css'
+import '../css/blog.css'
 import { blogPosts } from './postsData';
 
 function BlogContent(){

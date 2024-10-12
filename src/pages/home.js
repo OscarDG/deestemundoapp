@@ -5,7 +5,7 @@ import MainHero from '../elements/mainhero';
 import BlogContent from '../elements/blog_home';
 import Footer from '../elements/footer';
 
-import './home.css'
+import '../css/home.css'
 
 function Home (){
     const [sticky, setSticky] = useState(false);
@@ -23,6 +23,7 @@ function Home (){
           window.removeEventListener('scroll', handleScroll);
       };
   }, []);
+  
     return(
         <>
         <header className={`app-header ${sticky ? 'sticky' : ''}`}>
@@ -32,7 +33,6 @@ function Home (){
             <MainHero />
         </section>
         <section className="App-content">
-            <h1 className='episodes-title'>ÚLTIMOS EPISODIOS</h1>
             <EpisodesContent />
             <BlogContent />
         </section>
