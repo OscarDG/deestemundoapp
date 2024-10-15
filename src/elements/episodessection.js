@@ -70,15 +70,17 @@ function EpisodesContent(){
             }
     });
     return(
-        <>
+    <>
+    <section className='episodes-content'>
         <h1 className='episodes-title'>ÚLTIMOS EPISODIOS</h1>
-        <div className="mainEpisodes-wrap">
-            {episodesContainers}
-            <div className='episodes-button'>
-                <a href='/Episodios'><p>Más episodios</p></a>
+            <div className="mainEpisodes-wrap">
+                {episodesContainers}
+                <div className='episodes-button'>
+                    <a href='/Episodios'><p>Más episodios</p></a>
+                </div>
             </div>
-        </div>
-        </>
+    </section>
+    </>
     )
 
 }

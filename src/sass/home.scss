@@ -1,7 +1,0 @@
-@import '_mixins.scss';
-@import '_custom-variables.sass';
-
-div{
-    @include shadow;
-    background-color: $main-yellow;
-}

@@ -1,0 +1,160 @@
+@import '_custom-variables.sass'
+@import 'mixins.sass'
+
+.pageEpisodes-wrap
+    position: relative
+    top: 20px
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-self: center
+    flex-wrap: wrap
+    gap: 20px
+    width: 100%
+    height: auto
+    min-height: 760px
+    padding: 20px
+  
+
+.episode-chart
+    position: relative
+    display: flex
+    flex-direction: column
+    overflow: hidden
+    width: 300px
+    height: 380px
+    border-radius: 8px
+    margin: 0 0 50px 0
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+    backdrop-filter: blur(5px)
+    -webkit-backdrop-filter: blur(5px)
+  
+.episode-image--page
+    width: 300px
+  
+.episode-title--page
+    position: relative
+    top: -25px
+    left: 30px
+    width: 100px
+    font-size: $main-title-size
+    font-family: $main-title-font
+  
+.episode-topic--page
+    justify-content: flex-start
+    position: relative
+    top: -20px
+    left: 30px
+    width: 80px
+    font-family: $paragraph-font
+    font-size: $paragraph-size
+    color: $second-black
+  
+.episode-more
+    position: relative
+    top:15px
+    left: 240px
+    width: 45px
+    height: 45px
+    border-radius: 50%
+    background-color: $links-color
+    background-image: url('../images/arrow-right-white.svg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+  
+.episode-more:hover
+    background-color: $main-white
+    border: solid 2px $links-color
+    background-image: url('../images/arrow-right-green.svg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+
+.episode-more 
+    img
+        position: relative
+        top: 7px
+        left: 7px
+        width: 30px
+
+@media (min-width: 768px)
+
+    .pageEpisodes-wrap
+        position: relative
+        top: 20px
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-self: center
+        flex-wrap: wrap
+        gap: 20px
+        width: 90%
+        height: auto
+        min-height: 760px
+        padding: 20px
+    
+    .episode-chart
+        position: relative
+        display: flex
+        flex-direction: column
+        overflow: hidden
+        width: 300px
+        height: 380px
+        border-radius: 8px
+        margin: 0 0 50px 0
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+        backdrop-filter: blur(5px)
+        -webkit-backdrop-filter: blur(5px)
+        
+    .episode-image--page
+        width: 300px
+  
+    .episode-title--page
+        position: relative
+        top: -25px
+        left: 30px
+        width: 100px
+        font-size: $main-title-size
+        font-family: $main-title-font
+  
+    .episode-topic--page
+        justify-content: flex-start
+        position: relative
+        top: -20px
+        left: 30px
+        width: 80px
+        font-family: $paragraph-font
+        font-size: $paragraph-size
+        color: $second-black
+        
+    .episode-more
+        position: relative
+        top:15px
+        left: 240px
+        width: 45px
+        height: 45px
+        border-radius: 50%
+        background-color: $links-color
+        background-image: url('../images/arrow-right-white.svg')
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+  
+    .episode-more:hover
+        background-color: $main-white
+        border: solid 2px $links-color
+        background-image: url('../images/arrow-right-green.svg')
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+    
+    .episode-more 
+        img
+            position: relative
+            top: 7px
+            left: 7px
+            width: 30px
+    
+    
+

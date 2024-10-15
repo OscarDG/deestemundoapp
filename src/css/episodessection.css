@@ -1,60 +1,166 @@
-:root{
-    --main-white: #FDFEFE;
-    --second-yellow: #FFDE81;
-    --main--yellow: #FFD357;
-    --main-blue: #0B5F96;
-    --second-blue: #468BB7;
-    --links-color: #81ecec;
-    --main-black: #1E2025;
-    --second-black: #424551;
-    --main-title-font: "Nunito", sans-serif;
-    --paragraph-font: "Quicksand", sans-serif;
-    --main-title-size: 18px;
-    --second-title: 14px;
-    --paragraph-size: 12px;
-    --span-size: 10px;
-  }
-  
-  .App-content{
+.mainEpisodes-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 5%;
+  width: 80%;
+  height: 100%;
+  padding: 30px 15px 20px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.episodes-title {
+  z-index: 1;
+  position: relative;
+  top: 130px;
+  left: 540px;
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  color: #FFD357;
+}
+
+.episodes-wrap {
+  position: relative;
+  top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 150px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.new-span {
+  z-index: 2;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 20px;
+  height: 20px;
+  background-color: #81ecec;
+  border-radius: 50%;
+  box-shadow: 2px 2px 3px rgb(66, 69, 81);
+}
+
+.episode-image img {
+  width: 150px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.episode-name {
+  position: relative;
+  top: 5px;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  color: #FDFEFE;
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+}
+
+.episode-date {
+  position: relative;
+  bottom: 3px;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  color: #FDFEFE;
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+}
+
+.episode-topic {
+  position: relative;
+  top: -15px;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 15px;
+  color: #FDFEFE;
+  font-family: "Quicksand", sans-serif;
+  font-size: 12px;
+}
+
+.episodes-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 0px;
+  width: 800px;
+  height: 40px;
+  margin-top: 30px;
+}
+
+.episodes-button p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 32px;
+  background-color: #0B5F96;
+  border-radius: 6px;
+  color: #FDFEFE;
+  font-family: "Nunito", sans-serif;
+  font-size: 12px;
+}
+
+.episodes-button a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .episodes-content {
+    position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 100%;
-    min-width: 100%;
-    height: 100%;
-    margin-top: 0px;
+    height: 110vh;
+    background-color: #1E2025;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5);
   }
-  
-  .mainEpisodes-wrap{
+  .episodes-title {
+    z-index: 1;
+    position: relative;
+    top: 130px;
+    left: 0px;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+    color: #FFD357;
+  }
+  .mainEpisodes-wrap {
+    position: absolute;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     gap: 5%;
-    width: 80%;
-    height: 100%;
-    padding: 30px 15px 20px;
-    margin-top: 20px;
-    margin-bottom: 100px;
+    width: 100%;
+    max-width: 868px;
+    height: 80%;
+    padding: 40px 15px 20px;
+    margin-top: 100px;
+    margin-bottom: 50px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
   }
-  
-  .episodes-title{
-    z-index: 1;
-    position: relative;
-    font-size: var(--main-title-size);
-    font-family: var(--main-title-font);
-    color: var(--main--yellow);
-    top: 80px;
-  }
-  
-  .episodes-wrap{
+  .episodes-wrap {
     position: relative;
     top: 30px;
     display: flex;
@@ -62,67 +168,60 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 30px;
-    width: 150px;
+    width: 200px;
     height: auto;
     border-radius: 6px;
   }
-  
-  .new-span{
+  .new-span {
     z-index: 2;
     position: absolute;
-    top: -8px;
+    top: -7px;
     right: -8px;
     width: 20px;
     height: 20px;
-    background-color: var(--links-color);
+    background-color: #81ecec;
     border-radius: 50%;
     box-shadow: 2px 2px 3px rgb(66, 69, 81);
   }
-  
-  .episode-image img{
-    width: 150px;
+  .episode-image img {
+    width: 200px;
     height: auto;
     border-radius: 6px;
   }
-  
-  .episode-name{
+  .episode-name {
     position: relative;
     top: 5px;
     display: flex;
     justify-content: center;
     width: 100px;
     height: 30px;
-    color: var(--main-white);
-    font-family: var(--paragraph-font);
-    font-size: var(--paragraph-size);
+    color: #FDFEFE;
+    font-family: "Quicksand", sans-serif;
+    font-size: 12px;
   }
-  
-  .episode-date{
+  .episode-date {
     position: relative;
-    bottom: 3px;
+    top: -3px;
     display: flex;
     justify-content: center;
     width: 100px;
     height: 30px;
-    color: var(--main-white);
-    font-family: var(--paragraph-font);
-    font-size: var(--paragraph-size);
+    color: #FDFEFE;
+    font-family: "Quicksand", sans-serif;
+    font-size: 12px;
   }
-  
-  .episode-topic{
+  .episode-topic {
     position: relative;
     top: -15px;
     display: flex;
     justify-content: center;
     width: 200px;
     height: 15px;
-    color: var(--main-white);
-    font-family: var(--paragraph-font);
-    font-size: var(--paragraph-size);
+    color: #FDFEFE;
+    font-family: "Quicksand", sans-serif;
+    font-size: 12px;
   }
-  
-  
-  .episodes-button{
+  .episodes-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,163 +229,21 @@
     bottom: 0px;
     width: 800px;
     height: 40px;
-    margin-top: 30px;
+    margin-top: 60px;
   }
-  
-  .episodes-button p{
+  .episodes-button p {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 200px;
     height: 32px;
-    background-color: var(--main-blue);
+    background-color: #0B5F96;
     border-radius: 6px;
-    color: var(--main-white);
-    font-family: var(--main-title-font);
-    font-size: var(--paragraph-size);
+    color: #FDFEFE;
+    font-family: "Nunito", sans-serif;
+    font-size: 12px;
   }
-  
-  .episodes-button a{
+  .episodes-button a {
     text-decoration: none;
   }
-  
-  
-  
-  @media (min-width: 768px){
-  
-    .App-content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        min-width: 100%;
-        height: 100%;
-        margin-top: 0px;
-        background-color: var(--main-black);
-      }
-  
-    .mainEpisodes-wrap{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-content: center;
-      justify-content: center;
-      gap: 5%;
-      width: 90%;
-      max-width: 868px;
-      height: 100%;
-      padding: 40px 15px 20px;
-      margin-top: 20px;
-      margin-bottom: 100px;
-      background: rgba(255, 255, 255, 0.2);
-      border-radius: 16px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(5px);
-      -webkit-backdrop-filter: blur(5px);
-    }
-  
-    .episodes-title{
-      z-index: 1;
-      position: relative;
-      top: 80px;
-      font-size: var(--main-title-size);
-      font-family: var(--main-title-font);
-      color: var(--main--yellow);
-    }
-  
-    .episodes-wrap{
-      position: relative;
-      top: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      margin-top: 30px;
-      width: 200px;
-      height: auto;
-      border-radius: 6px;
-    }
-  
-    .new-span{
-      z-index: 2;
-      position: absolute;
-      top: -7px;
-      right: -8px;
-      width: 20px;
-      height: 20px;
-      background-color: var(--links-color);
-      border-radius: 50%;
-      box-shadow: 2px 2px 3px rgb(66, 69, 81);
-    }
-  
-    .episode-image img{
-      width: 200px;
-      height: auto;
-      border-radius: 6px;
-    }
-    
-    .episode-name{
-      position: relative;
-      top: 5px;
-      display: flex;
-      justify-content: center;
-      width: 100px;
-      height: 30px;
-      color: var(--main-white);
-      font-family: var(--paragraph-font);
-      font-size: var(--paragraph-size);
-    }
-  
-    .episode-date{
-      position: relative;
-      top: -3px;
-      display: flex;
-      justify-content: center;
-      width: 100px;
-      height: 30px;
-      color: var(--main-white);
-      font-family: var(--paragraph-font);
-      font-size: var(--paragraph-size);
-    }
-  
-    .episode-topic{
-      position: relative;
-      top: -15px;
-      display: flex;
-      justify-content: center;
-      width: 200px;
-      height: 15px;
-      color: var(--main-white);
-      font-family: var(--paragraph-font);
-      font-size: var(--paragraph-size);
-    }
-  
-    .episodes-button{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      bottom: 0px;
-      width: 800px;
-      height: 40px;
-      margin-top: 60px;
-    }
-  
-    .episodes-button p{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 200px;
-      height: 32px;
-      background-color: var(--main-blue);
-      border-radius: 6px;
-      color: var(--main-white);
-      font-family: var(--main-title-font);
-      font-size: var(--paragraph-size);
-    }
-  
-    .episodes-button a{
-      text-decoration: none;
-    }
-  }
+}/*# sourceMappingURL=episodessection.css.map */

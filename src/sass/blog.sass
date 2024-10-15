@@ -1,0 +1,262 @@
+@import '_custom-variables.sass'
+@import '_mixins.sass'
+    
+.blog-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    position: relative
+    width: 100%
+    height: 100vh
+    background-color: $main-white
+    margin-bottom: 0px
+
+.blog-content
+    display: flex
+    justify-content: flex-start
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 98vw
+    height: auto
+    min-height: 60vh
+    padding: 5px
+    border: 0
+    border-radius: 8px
+
+
+.blog-title
+    text-align: center
+    font-size: $main-title-size
+    font-family: $main-title-font
+    font-weight: bold
+    color: $main-blue
+    margin: 20px 0 30px
+
+
+.post-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 200px
+    height: 240px
+    border-radius: 0px
+    margin: 10px 5px
+    padding: 0
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1)
+    backdrop-filter: blur(5px)
+    -webkit-backdrop-filter: blur(5px)
+
+
+.post-title    
+    z-index: 2
+    position: absolute
+    top: 50px
+    width: 150px
+    font-size: $second-title
+    font-family: $paragraph-font
+    font-weight: bold
+    text-align: center
+    margin-top: 5px
+    color: $main-white
+
+
+.post-image
+    overflow: hidden
+    position: absolute
+    top: 0
+    width: 200px
+    height: 150px
+    border-radius: 6px 6px 6px 6px
+    filter: drop-shadow(2px 2px  3px $second-black)
+
+
+.post-image 
+    img
+        width: 200px
+        height: 150px
+        border-radius: 6px 6px 6px 6px
+
+
+.post-image--overlay
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: rgba(0, 0, 0, 0.3)
+
+.post-date
+    position: absolute
+    bottom: 65px
+    left: 100px
+    color: $second-black
+    font-size: $span-size
+    font-weight: bold
+    margin-bottom: 5px
+
+
+.post-content
+    width: 200px
+    height: 30px
+    position: absolute
+    font-size: $span-size
+    font-family: $paragraph-font
+    color: $second-black    
+
+.post-wrapper 
+    a
+        position: absolute
+        bottom: 15px
+        left: 0
+        text-align: center
+        font-family: $paragraph-font
+        text-decoration: none
+        color: $main-blue
+        margin: 10px 0 5px
+        width: 100px
+        height: 5px
+
+
+.post-wrapper 
+    a::after
+        content: ""
+        position: absolute
+        bottom: -15px
+        left: 0px
+        width: 0
+        height: 2px
+        background-color: $main-yellow
+        transition: width 0.3s ease-in-out
+
+
+.post-wrapper 
+    a:hover::after
+        width: 70px
+
+@media (min-width: 768px)
+
+    .blog-wrapper
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        position: relative
+        width: 100%
+        height: 90vh
+        background-color: $main-white
+        margin-bottom: 0px
+    
+    .blog-title
+        text-align: center
+        font-size: $main-title-size
+        font-family: $main-title-font
+        font-weight: bold
+        color: $main-blue
+        margin: 40px 0 10px
+    
+    .blog-content
+        display: flex
+        justify-content: flex-start
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+        width: 98vw
+        height: auto
+        min-height: 60vh
+        padding: 5px
+        border: 0
+        border-radius: 8px
+    
+    .post-wrapper
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 240px
+        height: auto
+        min-height: 250px
+        border-radius: 0px
+        margin: 10px 10px
+        padding: 5px 0 30px
+        background-color: transparent
+    
+    .post-title
+        width: 150px
+        font-size: $second-title
+        font-family: $paragraph-font
+        font-weight: bold
+        text-align: center
+        margin-top: 10px
+    
+    .post-image
+        overflow: hidden
+        position: absolute
+        top: 0
+        width: 240px
+        height: 160px
+        border-radius: 8px 8px 8px 8px
+    
+
+    .post-image 
+        img
+            width: 240px
+            height: 170px  
+
+    .post-image--overlay
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: rgba(0, 0, 0, 0.3)
+    
+    .post-content
+        width: 200px
+        height: 70px
+        position: absolute
+        top: 190px
+        font-size: $span-size
+        font-family: $paragraph-font
+        color: $second-black
+        text-align: center
+        overflow: hidden
+        line-height: 12px
+
+    .post-wrapper 
+        a
+            position: relative
+            top: 170px
+            left: 20px
+            font-family: $paragraph-font
+            text-decoration: none
+            color: $main-blue
+            text-align: left
+            margin: 5px 0 5px
+            width: 100px
+            height: 20px
+    
+    .post-wrapper 
+        a::after
+            content: ""
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 0
+            height: 2px
+            background-color: $main-yellow
+            transition: width 0.3s ease-in-out
+    
+    .post-wrapper 
+        a:hover::after
+            width: 65px
+            border-radius: 6px

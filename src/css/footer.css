@@ -1,36 +1,69 @@
+.App-footer {
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FDFEFE;
+  width: 100%;
+  height: 60px;
+}
 
-:root{
-    --main-white: #FDFEFE;
-    --second-yellow: #FFDE81;
-    --main--yellow: #FFD357;
-    --main-blue: #0B5F96;
-    --second-blue: #468BB7;
-    --links-color: #81ecec;
-    --main-black: #1E2025;
-    --second-black: #424551;
-    --main-title-font: "Nunito", sans-serif;
-    --paragraph-font: "Quicksand", sans-serif;
-    --main-title-size: 18px;
-    --second-title: 14px;
-    --paragraph-size: 12px;
-    --span-size: 10px;
-  }
+.main-footer--contact {
+  position: absolute;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  width: 100px;
+  height: 30px;
+  font-family: "Nunito", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #1E2025;
+}
 
-.App-footer{
-    position:relative;
+.main-footer--social {
+  position: absolute;
+  right: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  width: 150px;
+  height: 50px;
+}
+
+.main-footer--social img {
+  width: 30px;
+  height: 30px;
+}
+
+.main-footer--social a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .App-footer {
+    position: relative;
     bottom: 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--main-white);
+    background-color: #FDFEFE;
+    filter: drop-shadow(0 4px 5px rgba(0, 0, 0, 0.5));
     width: 100%;
     height: 60px;
   }
-  
-  .main-footer--contact{
+  .main-footer--contact {
     position: absolute;
-    left: 30px;
+    left: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,83 +71,28 @@
     gap: 10%;
     width: 100px;
     height: 30px;
-    font-family: var(--main-title-font);
+    font-family: "Nunito", sans-serif;
     font-size: 12px;
     font-weight: bold;
-    color: var(--main-black);
+    color: #1E2025;
   }
-  
-  .main-footer--social{
+  .main-footer--social {
     position: absolute;
-    right: 5px;
+    right: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10%;
-    width: 150px;
+    gap: 20%;
+    width: 200px;
     height: 50px;
   }
-  
-  .main-footer--social img{
+  .main-footer--social img {
     width: 30px;
     height: 30px;
   }
-  
-  .main-footer--social a{
+  .main-footer--social a {
     text-decoration: none;
     cursor: pointer;
   }
-
-  @media (min-width: 768px){
-    .App-footer{
-        position:relative;
-        bottom: 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        background-color: var(--main-white);
-        filter: drop-shadow(0 4px 5px rgba(0, 0, 0, 0.5));
-        width: 100%;
-        height: 60px;
-      }
-    
-      .main-footer--contact{
-        position: absolute;
-        left: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10%;
-        width: 100px;
-        height: 30px;
-        font-family: var(--main-title-font);
-        font-size: 12px;
-        font-weight: bold;
-        color: var(--main-black);
-      }
-    
-      .main-footer--social{
-        position: absolute;
-        right: 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 20%;
-        width: 200px;
-        height: 50px;
-      }
-    
-      .main-footer--social img{
-        width: 30px;
-        height: 30px;
-      }
-    
-      .main-footer--social a{
-        text-decoration: none;
-        cursor: pointer;
-      }
-  }
+}/*# sourceMappingURL=footer.css.map */

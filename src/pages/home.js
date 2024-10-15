@@ -5,7 +5,6 @@ import MainHero from '../elements/mainhero';
 import BlogContent from '../elements/blog_home';
 import Footer from '../elements/footer';
 
-import '../css/home.css'
 
 function Home (){
     const [sticky, setSticky] = useState(false);
@@ -29,13 +28,9 @@ function Home (){
         <header className={`app-header ${sticky ? 'sticky' : ''}`}>
             <NavBar name="Nav Bar" status={true}/>
         </header>
-        <section>
             <MainHero />
-        </section>
-        <section className="App-content">
             <EpisodesContent />
             <BlogContent />
-        </section>
         <footer className='App-footer'>
             <Footer />
         </footer>

@@ -1,0 +1,80 @@
+@import '_custom-variables.sass'
+@import 'mixins.sass'
+
+.second-hero
+    position: relative
+    height: 30vh
+    width: 100%
+    min-width: 421px
+    overflow: hidden
+
+.second-hero--img
+    position: relative
+    height: 100%
+    width: 100%
+    object-fit: cover
+    object-position: center
+
+.second-hero--overlay
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: rgba(0, 0, 0, 0.5)
+
+.second-hero--button
+    position: absolute
+    bottom: 40px
+    width: 200px
+    height: 40px
+    border-radius: 8px
+    cursor: pointer
+    border: 0
+    background-color: $main-yellow
+    font-size: $main-title-size
+    font-family: $main-title-font
+    font-weight: bold
+    color: $main-white
+
+.main-hero--button:hover
+    border-radius: 8px
+    border: solid 1px $main-yellow
+    cursor: pointer
+    background-color: transparent
+    font-size: $main-title-size
+    font-family: $main-title-font
+    font-weight: bold
+    color: $main-yellow
+
+@media (min-width: 768px)
+    .second-hero
+        position: relative
+        height: 30vh
+        width: 100%
+        overflow: hidden
+    
+    .second-hero--img
+        position: relative
+        height: 100%
+        width: 100%
+        object-fit: cover
+        object-position: center
+    
+    .second-hero--overlay
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: rgba(0, 0, 0, 0.5)
+    
+
+
+    

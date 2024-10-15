@@ -1,0 +1,103 @@
+@import '_custom-variables.sass'
+@import 'mixins.sass'
+    
+.dropdown-active
+    display: flex
+    position: absolute
+    top:35px
+    right: 80px
+
+.dropdown-menu
+    position: absolute
+    display: flex
+    flex-direction: column
+    width: 200px
+    height: 240px
+    top:100%
+    right: 0
+    border: 1px solid $main-white
+    border-radius: 8px
+    background: rgba(66, 69, 81, 0.5)
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+    backdrop-filter: blur(5px)
+    -webkit-backdrop-filter: blur(5px)
+
+
+.dropdown-menu 
+    li
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 200px
+        height: 60px
+        border-bottom: 0.5px solid $main-white
+        list-style: none
+        font-size: $main-title-size
+        font-family: $main-title-font
+
+
+.dropdown-menu 
+    li:last-child
+        border-bottom: none
+
+.dropdown-menu 
+    li 
+        a
+            height: 10px
+            color: $main-white
+            text-decoration: none
+
+.dropdown-menu 
+    li 
+        a:hover
+            color: $links-color
+
+.dropdown-menu:hover 
+    .dropdown-menu
+        display: block
+
+@media (min-width: 768px) 
+    
+    .dropdown
+        position: relative
+        display: none
+    
+    .dropdown-menu
+        position: absolute
+        top:100%
+        right: 50px
+        background-color: $main-black
+        border: 1px solid $second-black
+        display: none
+    
+    .dropdown-close
+        z-index: 2
+        position: absolute
+        top: 10px
+        left: 10px
+        width: 20px
+        height: 20px
+        background-image: url(../images/close_white.svg)
+        background-repeat: no-repeat
+        background-size: contain
+    
+    .dropdown-close:hover
+        cursor: pointer
+    
+    .dropdown-menu 
+        li
+            padding: 10px
+            border-bottom: 1px solid $second-black
+    
+    .dropdown-menu 
+        li:last-child
+            border-bottom: none
+    
+    .dropdown-menu 
+        li 
+            a:hover
+                background-color: $main-blue
+    
+    .dropdown-menu:hover 
+        .dropdown-menu
+            display: block

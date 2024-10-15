@@ -36,7 +36,6 @@ function NavBar(){
                 <nav className="nav-menu">{navLinks}</nav>
             </div>
             <div className= {navClass} onClick= {handleEvent}>
-
                 <span className='line-1'></span>
                 <span className='line-2'></span>
                 <span className='line-3'></span>
